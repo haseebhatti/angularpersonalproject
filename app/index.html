@@ -1,41 +1,29 @@
 <!DOCTYPE html>
-<html ng-app = "myApp">
+<html ng-app = "app">
   <head>
     <meta charset="utf-8">
     <title>HaseebTube</title>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
-        <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.1.2.js"></script>
-        <script src="example.js"></script>
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body >
-    <div ng-controller="DropdownCtrl">
-        <!-- Simple dropdown -->
-        <span uib-dropdown on-toggle="toggled(open)">
-         <div class="btn-group" uib-dropdown>
-          <button id="split-button" type="button" class="btn btn-danger">Action</button>
-          <button type="button" class="btn btn-danger" uib-dropdown-toggle>
-            <span class="caret"></span>
-            <span class="sr-only">Split button!</span>
-          </button>
-          <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
-            <li role="menuitem"><a href="#">Action</a></li>
-            <li role="menuitem"><a href="#">Another action</a></li>
-            <li role="menuitem"><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li role="menuitem"><a href="#">Separated link</a></li>
+
+           <div ng-controller = 'DropDownActionsController as dc'>
+          <!-- <button class="btn btn-primary dropdown-toggle" id="dropDown-button" type="button" data-toggle="dropdown">Dropdown Example
+          </button> -->
+
+          <ul ng-repeat = 'item in dc.dropDownActions '>
+            <li role="menuitem"><a href="#">{{item.menuOption}}</a></li>
           </ul>
 
-        </div>
-        </span>
+
         </div>
 
 
 
 <script src="vendor/angular/angular.js"></script>
-<script src="app.js"></script>
+<script src="main/app.js"></script>
+<script src="dropDown/dropDown.js"></script>
+<script src="dropDown/dropDownFactory.js"></script>
+<script src="dropDown/dropDownController.js"></script>
   </body>
 </html>

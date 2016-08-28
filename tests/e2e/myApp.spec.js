@@ -1,10 +1,9 @@
-describe('heading', function () {
-  it('should have a value', function () {
+describe('split-button', function () {
+  it('should have actions displayed using ng-repeat', function () {
     browser.get('index.html');
-    var header = element(by.id('heading'));
-    var binder = element(by.binding('mc.name'));
-
-    expect(header.getText()).toEqual('This is my controller');
-    expect(binder.getText()).toEqual('This is my controller');
+    var header = element(by.id('dropDown-button'));
+    header.click();
+    // expect(element(by.class('dropdown-menu'))).isDisplayed()
+    expect(1).toEqual(2);
   });
 });

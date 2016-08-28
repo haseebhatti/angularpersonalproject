@@ -16,7 +16,8 @@ module.exports = function (config) {
       'vendor/angular/angular.js',
       'vendor/angular-mocks/angular-mocks.js',
       'main/**/*.js',
-      '../tests/unit/*.spec.js'
+      'dropDown/**/*.js',
+      '../tests/unit/**/*.spec.js'
 
     ],
 
