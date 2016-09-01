@@ -2,28 +2,30 @@
 <html ng-app = "app">
   <head>
     <meta charset="utf-8">
-    <title>HaseebTube</title>
+    <title>Gotham Luxury Cars</title>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
   </head>
   <body >
 
-           <div ng-controller = 'DropDownActionsController as dc'id="dropDown">
-          <!-- <button class="btn btn-primary dropdown-toggle" id="dropDown-button" type="button" data-toggle="dropdown">Dropdown Example
-          </button> -->
+      <div id="carImage" ng-controller="imageDisplay as id">
 
-          <ul ng-repeat = 'item in dc.dropDownActions '>
-            <li role="menuitem"><a href="#">{{item.menuOption}}</a></li>
-          </ul>
+          <div><image src ={{option.image}}></image></div>
 
 
+
+
+          </div>
+          <button ng-click= "nextImage()">next</button>
+          <button ng-click= "previousImage()">next</button>
         </div>
-        <div id = "logo"></div>
-        <div id="searchBar"><input type="text" name="name" value=""></div>
+      </div>
 
 
 
 <script src="vendor/angular/angular.js"></script>
 <script src="main/app.js"></script>
+
+<script src="directive/customDirec.js"></script>
 <script src="dropDown/dropDown.js"></script>
 <script src="dropDown/dropDownFactory.js"></script>
 <script src="dropDown/dropDownController.js"></script>

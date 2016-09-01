@@ -1,28 +1,6 @@
-#logo{
-
- height: 130px;
- width: 280px;
- border: 1px solid black;
- float: right;
- margin: auto;
- margin-right: 922px;
- background-image:url("http://cdn.commentseruiner.net/c/38-subcategory_default/batman.jpg");
- background-repeat: no-repeat;
- background-color: transparent;
-
-}
-#dropDown{
+#carImage{
   border: 1px solid black;
-  width: 130px;
-  float: left;
-}
-#searchBar{
-  border: 1px solid black;
-height: 100px;
-width: 840px;
-float: left;
-margin-left: 160px;
-}
-html{
-  display: inline !important;
+  height: 600px;
+  width: 600px;
+margin: auto;
 }

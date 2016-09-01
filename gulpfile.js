@@ -7,7 +7,7 @@ var gulp = require('gulp'),
   minify = require('gulp-minify'),
   uglify = require('gulp-uglify'),
   jshint = require('gulp-jshint'),
-  concat = require('gulp-concat'),
+  concat = require('gulp-concat-util'),
   Server = require('karma').Server;
 
 // create a default task and just log a message

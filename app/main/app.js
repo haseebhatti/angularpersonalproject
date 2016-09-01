@@ -1,5 +1,5 @@
 (function () {
   'use strict';
 
-  angular.module('app', ['app.dropDownActions']);
+  angular.module('app', ['app.dropDownActions', 'app.customDirective']);
 }());

@@ -2,8 +2,13 @@
   'use strict';
 
   function DropDownActionsController (dropDownFactory) {
-    this.dropDownActions = dropDownFactory.getData();
+    var vm = this;
+    this.title = 'Car Comparison';
+    dropDownFactory.getData().then(function (carInfo) {
+      vm.carInfo = carInfo;
+    });
   }
+
   angular.module('app.dropDownActions')
     .controller('DropDownActionsController', DropDownActionsController);
 }());
